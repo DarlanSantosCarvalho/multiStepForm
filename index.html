@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="container">
 
         <div class="step-container">
 
@@ -47,7 +47,7 @@
             <img src="assets/images/bg-sidebar-desktop.svg" alt="">
         </div>
 
-        <div class="form-container">
+        <div class="main">
             <div class="instructions">
                 <h1>Personal info</h1>
                 <p>Please, provide your name, email address and phone number.</p>
@@ -60,18 +60,52 @@
                     <input type="text" name="" class="form" placeholder="Ex: Lionel Messi">
                 </div>
 
-                <div class="form-email" >
+                <div class="form-email">
                     <p>Email address</p>
                     <input type="text" name="" class="form" placeholder="Ex: LionelMessi@lorem.com">
                 </div>
 
-                <div class="form-nome">
+                <div class="form-phone">
                     <p>Phone number</p>
-                    <input type="text" name="" class="form" placeholder="Ex: XX 12345 6789">
+                    <input type="text" name="" class="form" placeholder="Ex: XX 12345 6789" maxlength="13">
                 </div>
             </div>
 
-            <input type="submit" value="Next" id="next">
+            <div class="forms2 hidden">
+
+                <div class="option one">
+                    <img class="logo" src="assets/images/icon-arcade.svg" alt="Ícone de controle analógico">
+                    <h2>Arcade</h2>
+                    <p class="pay-arc">$9/mo</p>
+                </div>
+
+                <div class="option two">
+                    <img class="logo" src="assets/images/icon-advanced.svg" alt="ícone de controle de jogo retrô">
+                    <h2>Advanced</h2>
+                    <p class="pay-adv">$12/mo</p>
+                </div>
+
+                <div class="option three">
+                    <img class="logo" src="assets/images/icon-pro.svg" alt="ícone de controle de videogame">
+                    <h2>Pro</h2>
+                    <p class="pay-pro">$15/mo</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="month-year hidden">
+                <p class="month chosen">Month</p>
+                <p class="year">Year</p>
+            </div>
+
+            <div class="buttons">
+
+                <input type="submit" value="Next" id="next">
+                <input type="submit" class="hidden" value="Go Back" id="back">
+
+            </div>
 
         </div>
 
